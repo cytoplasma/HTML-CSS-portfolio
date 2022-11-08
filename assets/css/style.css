@@ -15,6 +15,7 @@
 
 .black-header {
     color: var(--important-color);
+    text-transform: uppercase;
 }
 
 /* navbar */
@@ -22,20 +23,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 2em;
     padding-left: 8%;
     padding-right: 8%;
 }
 
 .my-name {
-    color:var(--important-color);
+    color: var(--important-color);
     font-weight: 700;
     font-size: 35px;
     cursor: pointer;
 }
 
 span {
-    color:rgb(81, 81, 81)
+    color:rgba(81, 81, 81, 0.377)
 }
 
 nav ul li {
@@ -117,7 +118,94 @@ nav ul li a:hover {
     padding: 50px 0px;
 }
 
-.about-me-text {
-    width: 600px;
+.about-text {
+    width: 540px;
     color: var(--normal-color);
+    padding-left: 3em;
+    padding-right: 3em;
 }
+
+/* TODO: make a media query changing the flex-direction to column for phone */
+.about-main {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text h1 {
+    font-size: 85px;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+/* works section */
+
+
+
+.flex-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.text-background {
+    background-color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.flex-item {
+    border: 5px solid var(--background-color);
+    color: var(--important-color);
+    padding: 2em;
+    margin: 2em;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: 110%;
+  }
+  
+/* backgrounds */
+
+#my-work {
+    background-color: var(--background-divider-color);
+    border: 1px solid var(--accent-color);
+}
+
+.run-buddy {
+    background-image: url("../images/cat1.jpeg");
+  }
+  
+  .led-wall {
+    background-image: url("../images/cat2.jpeg")
+  }
+  
+  .react-calc {
+    background-image: url("../images/cat3.jpeg")
+  }
+  
+  .pastel-puzzles {
+    background-image: url("../images/cat4.jpeg")
+  }
+  
+  .surf-report {
+    background-image: url("../images/cat5.jpeg")
+  }
+  
