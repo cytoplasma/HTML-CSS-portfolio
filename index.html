@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremiah's Portfolio</title>
+    <title>Piromgraipakd // Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +15,44 @@
 <body>
     <header>
         <nav>
-            <h2 class="my-name">JEREMIAH <span>PIROMGRAIPAKD</span></h2>
+            <h2 class="my-name">PORT<span>FOLIO</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Work</a></li>
+                <li><a class="black-header" href="#">Home</a></li>
+                <li><a class="black-header" href="#">About Me</a></li>
+                <li><a class="black-header" href="#">My Work</a></li>
             </ul>
             <a href="#" class="clickable-button">Contact Me</a>
         </nav>
     </header>
-    <section class="intro-divider"></section>
+    <section class="intro-divider">
+        <div class="image-of-me">
+            <img id="portrait-img"
+            src="./assets/images/portrait.jpg" 
+            alt="picture of boy looking to the side">
+        </div>
+        <div id="UCI">
+            <h1 class="black-header">Jeremiah Piromgraipakd</h1>
+            <h4 class="black-header">student at</h4>
+            <h4>
+                <a id="UCI-link" href="https://bootcamp.ce.uci.edu/coding/">
+                    UCI BOOTCAMP
+                </a>
+            </h4>
+        </div>
+    </section>
     <main>
-        <section class="page" id="about"></section>
+        <section class="page about" id="about">
+            <div class="my-cat">
+                <img src="./assets/images/kuro.jpeg" alt="dark gray cat laying down, sleeping">
+            </div>
+            <div class="about-me-text">
+            <h1 class="black-header">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eum id eius adipisci perspiciatis vitae repudiandae nisi temporibus 
+                    voluptatibus iusto sunt delectus dicta magnam magni dolor deleniti, 
+                    beatae laudantium harum aliquam.</p>
+            </div>
+        </section>
         <section class="page" id="my-work"></section>
         <section class="page contact" id="contact"></section>
     </main>

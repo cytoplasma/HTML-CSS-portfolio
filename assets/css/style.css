@@ -1,8 +1,8 @@
 :root {
     --background-color: white;
-    --background-divider-color: rgba(255, 255, 255, 0.795);
+    --background-divider-color: rgba(215, 215, 215, 0.31);
     --important-color: rgb(24, 24, 24);
-    --normal-color: #C5C6C8;
+    --normal-color: #747474;
     --accent-color: #6a6a6a;
 }
 
@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+.black-header {
+    color: var(--important-color);
+}
+
+/* navbar */
 nav {
     display: flex;
     align-items: center;
@@ -39,9 +44,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--important-color);
     text-decoration: none;
     font-weight: 700;
+    font-size: 20px;
     text-transform: uppercase;   
 }
 
@@ -51,14 +56,68 @@ nav ul li a:hover {
 }
 
 .clickable-button {
-    background-color: var(--accent-color);
+    background-color: var(--important-color);
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
     padding: 10px 25px;
     border-radius: 15px;
     transition: transform .7s;
+    font-size: 15px;
 }
 .clickable-button:hover {
     transform: scale(1.1);
+}
+
+/* bumper section */
+
+.image-of-me img {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5px solid var(--accent-color);
+}
+
+.intro-divider {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: var(--background-divider-color);
+    border-top: 1px solid rgba(128, 128, 128, 0.449);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+
+#UCI {
+    font-size: 20px;
+    padding: 0.5em;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+#UCI-link {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+/* main section */
+
+
+
+/* about me section */
+
+.about {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.about-me-text {
+    width: 600px;
+    color: var(--normal-color);
 }
