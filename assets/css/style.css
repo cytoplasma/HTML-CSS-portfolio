@@ -1,0 +1,64 @@
+:root {
+    --background-color: white;
+    --background-divider-color: rgba(255, 255, 255, 0.795);
+    --important-color: rgb(24, 24, 24);
+    --normal-color: #C5C6C8;
+    --accent-color: #6a6a6a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.my-name {
+    color:var(--important-color);
+    font-weight: 700;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+span {
+    color:rgb(81, 81, 81)
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: var(--important-color);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;   
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    transition: .7s;
+}
+
+.clickable-button {
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: transform .7s;
+}
+.clickable-button:hover {
+    transform: scale(1.1);
+}
