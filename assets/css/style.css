@@ -150,13 +150,14 @@ nav ul li a:hover {
 /* works section */
 
 
-
 .flex-container ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .text-background {
@@ -167,21 +168,29 @@ nav ul li a:hover {
     padding-bottom: 0.5em;
 }
 
+ul li:first-child {
+    width: 95%;
+}
+
+ul li {
+    width: 570px;
+    height: 200px;
+}
+
+
 .flex-item {
-    border: 5px solid var(--background-color);
+    border: 2px solid black;
     color: var(--important-color);
     padding: 2em;
     margin: 2em;
-    min-height: 300px;
-    max-height: 300px;
-    min-width: 300px;
-    max-width: 300px;
     display: flex;
     align-items: flex-end;
     text-decoration: none;
     background-size: 110%;
+    flex-wrap: wrap;
   }
-  
+
+
 /* backgrounds */
 
 #my-work {
