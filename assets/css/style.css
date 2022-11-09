@@ -52,8 +52,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--accent-color);
-    transition: .7s;
+    color: #acacac;
+    transition: 0.7s;
 }
 
 .clickable-button {
@@ -149,6 +149,10 @@ nav ul li a:hover {
 
 /* works section */
 
+#works-header {
+    font-size: 50px;
+    text-align: center;
+}
 
 .flex-container ul {
     display: flex;
@@ -161,33 +165,46 @@ nav ul li a:hover {
 }
 
 .text-background {
-    background-color: white;
+    background-color: black;
+    color: white;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    opacity: 80%;
 }
 
-ul li:first-child {
+.text-background span {
+    color: rgb(211, 211, 211);
+}
+
+.flex-container ul li:first-child {
     width: 95%;
 }
 
-ul li {
+.flex-container ul li {
     width: 570px;
-    height: 200px;
+    height: 300px;
 }
 
 
 .flex-item {
-    border: 2px solid black;
+    border: 2.5px solid rgba(0, 0, 0, 0.516);
     color: var(--important-color);
-    padding: 2em;
-    margin: 2em;
+    padding: 5em 0 5em 0;
+    margin: 1em;
     display: flex;
     align-items: flex-end;
     text-decoration: none;
-    background-size: 110%;
+    background-size: 100%;
+    background-color:rgba(0, 0, 0, 0.484);
+    background-blend-mode: soft-light;
+    transition: 1s;
     flex-wrap: wrap;
+  }
+
+  .flex-item:hover {
+    background-color: rgba(0, 0, 0, 0);
   }
 
 
