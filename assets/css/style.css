@@ -56,19 +56,6 @@ nav ul li a:hover {
     transition: 0.7s;
 }
 
-.clickable-button {
-    background-color: var(--important-color);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    padding: 10px 25px;
-    border-radius: 15px;
-    transition: transform .7s;
-    font-size: 15px;
-}
-.clickable-button:hover {
-    transform: scale(1.1);
-}
 
 /* bumper section */
 
@@ -124,12 +111,15 @@ nav ul li a:hover {
 
 /* TODO: make a media query changing the flex-direction to column for phone */
 .about-main {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+.about-main img {
+    padding-left: 10em;
 }
 
 .about-text h1 {
@@ -176,7 +166,7 @@ nav ul li a:hover {
 }
 
 .flex-container ul li:first-child {
-    width: 95%;
+    width: 100%;
 }
 
 .flex-container ul li {
@@ -258,4 +248,54 @@ nav ul li a:hover {
     font-size: 35px;
     padding-bottom: 1em;
     text-align: center;
+  }
+
+
+  /* media queries */
+  @media screen and (max-width: 900px) {
+    .flex-container ul li,
+    .flex-container ul li:first-child {
+        flex-basis: 100%;
+    }
+    .about-main {
+        padding-bottom: 1.5em;
+    }
+    .about-main img {
+        max-width: 400px;
+        padding-left: 0;
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+  .flex-container ul li,
+  .flex-container ul li:first-child {
+    flex-basis: 100%;
+  }
+
+  .about-main {
+    flex-direction: column;
+    width: 50%;
+  }
+  .about-main img {
+    max-width: 400px;
+    padding-bottom: 4em;
+    
+  }
+  .about {
+    padding: 0 auto;
+  }
+  .about-text {
+    width: 400px;
+  }
+  .about-text h1 {
+    font-size: 50px;
+  }
+
+  #works-header {
+    font-size: 35px;
+  }
   }
