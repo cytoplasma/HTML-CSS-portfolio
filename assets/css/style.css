@@ -108,9 +108,6 @@ nav ul li a:hover {
 }
 
 /* main section */
-
-
-
 /* about me section */
 
 .about {
@@ -189,7 +186,7 @@ nav ul li a:hover {
 
 
 .flex-item {
-    border: 2.5px solid rgba(0, 0, 0, 0.516);
+    border: 2px solid rgba(0, 0, 0, 0.516);
     color: var(--important-color);
     padding: 5em 0 5em 0;
     margin: 1em;
@@ -212,7 +209,8 @@ nav ul li a:hover {
 
 #my-work {
     background-color: var(--background-divider-color);
-    border: 1px solid var(--accent-color);
+    border-top: 1px solid rgba(128, 128, 128, 0.449);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);;
 }
 
 .run-buddy {
@@ -235,3 +233,29 @@ nav ul li a:hover {
     background-image: url("../images/cat5.jpeg")
   }
   
+
+  /* footer */
+
+  .contact {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+
+  address img {
+    width: 70px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  address {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-header {
+    font-size: 35px;
+    padding-bottom: 1em;
+    text-align: center;
+  }
