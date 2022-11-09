@@ -1,3 +1,4 @@
+/* universal selectors */
 :root {
     --background-color: white;
     --background-divider-color: rgba(215, 215, 215, 0.31);
@@ -17,6 +18,33 @@
     color: var(--important-color);
     text-transform: uppercase;
 }
+
+/* backgrounds */
+#my-work {
+    background-color: var(--background-divider-color);
+    border-top: 1px solid rgba(128, 128, 128, 0.449);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);;
+}
+
+.run-buddy {
+    background-image: url("../images/cat1.jpeg");
+  }
+  
+  .led-wall {
+    background-image: url("../images/cat2.jpeg")
+  }
+  
+  .react-calc {
+    background-image: url("../images/cat3.jpeg")
+  }
+  
+  .pastel-puzzles {
+    background-image: url("../images/cat4.jpeg")
+  }
+  
+  .surf-report {
+    background-image: url("../images/cat5.jpeg")
+  }
 
 /* navbar */
 nav {
@@ -64,7 +92,7 @@ nav ul li a:hover {
     max-width: 200px;
     max-height: 200px;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -87,6 +115,10 @@ nav ul li a:hover {
     text-align: center;
     margin: auto;
     padding-bottom: 2em;
+}
+
+#UCI h1 {
+    padding-bottom: 0.5em;
 }
 
 #UCI-link {
@@ -139,6 +171,8 @@ nav ul li a:hover {
 #works-header {
     font-size: 50px;
     text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
 }
 
 .flex-container ul {
@@ -164,9 +198,9 @@ nav ul li a:hover {
 .text-background span {
     color: rgb(211, 211, 211);
 }
-
+/* TODO: select first work and make it bigger */
 .flex-container ul li:first-child {
-    width: 100%;
+    width: 95%;
 }
 
 .flex-container ul li {
@@ -176,7 +210,7 @@ nav ul li a:hover {
 
 
 .flex-item {
-    border: 2px solid rgba(0, 0, 0, 0.516);
+    border: 0.5px solid rgba(0, 0, 0, 0.516);
     color: var(--important-color);
     padding: 5em 0 5em 0;
     margin: 1em;
@@ -184,6 +218,7 @@ nav ul li a:hover {
     align-items: flex-end;
     text-decoration: none;
     background-size: 100%;
+    /* use bg color, bg blend mode, and transition to apply the desired effect shown in the example */
     background-color:rgba(0, 0, 0, 0.484);
     background-blend-mode: soft-light;
     transition: 1s;
@@ -191,40 +226,12 @@ nav ul li a:hover {
   }
 
   .flex-item:hover {
+    /* setting this will set the css animation into play */
     background-color: rgba(0, 0, 0, 0);
   }
 
 
-/* backgrounds */
-
-#my-work {
-    background-color: var(--background-divider-color);
-    border-top: 1px solid rgba(128, 128, 128, 0.449);
-    border-bottom: 1px solid rgba(128, 128, 128, 0.445);;
-}
-
-.run-buddy {
-    background-image: url("../images/cat1.jpeg");
-  }
-  
-  .led-wall {
-    background-image: url("../images/cat2.jpeg")
-  }
-  
-  .react-calc {
-    background-image: url("../images/cat3.jpeg")
-  }
-  
-  .pastel-puzzles {
-    background-image: url("../images/cat4.jpeg")
-  }
-  
-  .surf-report {
-    background-image: url("../images/cat5.jpeg")
-  }
-  
-
-  /* footer */
+  /* contact/footer */
 
   .contact {
     padding: 1em;
@@ -253,6 +260,7 @@ nav ul li a:hover {
 
   /* media queries */
   @media screen and (max-width: 900px) {
+    /* stretches out works into a column */
     .flex-container ul li,
     .flex-container ul li:first-child {
         flex-basis: 100%;
@@ -271,6 +279,7 @@ nav ul li a:hover {
 
 
   @media screen and (max-width: 768px) {
+    /* stretches out works into a column */
   .flex-container ul li,
   .flex-container ul li:first-child {
     flex-basis: 100%;
